@@ -46,7 +46,7 @@ params:
 
     footer:
         since: 2020
-        customText: "测试页脚"
+        customText: ""
 
     dateFormat:
         published: Jan 02, 2006
@@ -70,7 +70,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -126,13 +126,13 @@ params:
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
         giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            lightTheme:
-            darkTheme:
+            repo: blazar-x/hugo
+            repoID: R_kgDOHB3aHQ
+            category: General
+            categoryID: DIC_kwDOHB3aHc4COL2s
+            mapping: pathname
+            lightTheme: 
+            darkTheme: 
             reactionsEnabled: 1
             emitMetadata: 0
 
