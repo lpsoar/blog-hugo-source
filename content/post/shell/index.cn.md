@@ -3,7 +3,7 @@ title: Linux运行shell脚本提示No such file or directory
 description:  shell脚本命令是对的，但是cd命令切换不了目录
 date: 2022-03-18
 categories:
-    - 技术笔记
+    - program
 tags:
     - linux
     - shell

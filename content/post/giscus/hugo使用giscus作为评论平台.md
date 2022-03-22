@@ -3,7 +3,7 @@ title: hugo-stack主题使用giscus作为评论平台
 description: 
 date: 2022-03-20
 categories:
-    - 技术笔记
+    - program
 tags:
     - hugo
 ---

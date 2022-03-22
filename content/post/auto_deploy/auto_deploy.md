@@ -2,7 +2,7 @@
 title: hugo自动部署博客到云服务器
 date: 2022-03-19
 categories:
-    - 技术笔记
+    - program
 tags: 
     - hugo
 ---

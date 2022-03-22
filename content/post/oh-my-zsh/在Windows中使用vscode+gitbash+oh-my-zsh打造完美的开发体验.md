@@ -3,7 +3,7 @@ title: 在Windows中使用vscode + gitbash + oh-my-zsh打造完美的开发体�
 description: 不使用wsl2等其他方法，在gitbash里安装zsh，vscode使用bash作为终端
 date: 2022-03-22
 categories:
-    - 技术笔记
+    - program
 tags:
     - vscode
     - oh-my-zsh
@@ -16,9 +16,11 @@ windows端自带的命令行太弱了，用惯了linux命令行，所以想着�
 
 ## 安装步骤
 
-#### vscode 配置gitbash作为默认终端
+---
 
-粘贴以下配置文件到vscode->settings.json中
+### vscode 配置gitbash作为默认终端
+
+粘贴以下配置文件到`vscode->settings.json`中
 
 ```json
 "Git-Bash": {
@@ -30,13 +32,13 @@ windows端自带的命令行太弱了，用惯了linux命令行，所以想着�
 
 然后每次打开vscode默认就是gitbash啦
 
-#### 下载并解压zsh
+### 下载并解压zsh
 
 [官方下载地址](https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64)
 
 1. 下载后解压到git的根目录并覆盖
-2. 进入git/usr/bin目录下，发现有两个zsh文件`zsh.exe` `zsh-5.8.exe`,删除`zsh.exe`这个文件，然后把`zsh-5.8.exe`这个文件重命名为`zsh`
-3. 进入到用户根目录下，安装 oh-my-zsh ,一键式安装指令
+2. 进入git/usr/bin目录下，发现有两个zsh文件`zsh.exe` `zsh-5.8.exe`，删除`zsh.exe`这个文件，然后把`zsh-5.8.exe`这个文件重命名为`zsh`
+3. 进入到用户根目录`~`下，安装 oh-my-zsh 。一键式安装指令：
 
     ```
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -61,14 +63,16 @@ windows端自带的命令行太弱了，用惯了linux命令行，所以想着�
 
 ## 安装插件
 
+---
+
 1. 用zsh当然最重要的就是插件啦，git clone容易失效，所以我选择直接到github仓库把zip包下载下来，
 选择两个最常用的插件
-![](https://img.blazarx.xyz/img/20220322224902.png)
+![2](https://img.blazarx.xyz/img/20220322224902.png)
 在下载`zsh-autosuggestions`这个插件的时候,一定不能下载最新版本，否则在vscode中打开gitbash会出先按退格键命令乱飘的情况，切换tag到0.6.4下载这个版本即可
-![](https://img.blazarx.xyz/img/20220322225105.png)
+![3](https://img.blazarx.xyz/img/20220322225105.png)
 
 2. 下载后解压到`~/.oh-my-zsh/custom/plugins`目录下
-![](https://img.blazarx.xyz/img/20220322225624.png)
+![4](https://img.blazarx.xyz/img/20220322225624.png)
 
 3. 打开`~/.zshrc`，修改下面的配置,以后再添加插件，在括号里继续添加就可以了，插件名一定要对应
 
