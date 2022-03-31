@@ -15,9 +15,9 @@
 			"description: $2",
 			"date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
 			"categories:",
-			"- $3",
+			"	- $3",
 			"tags:",
-			"- $4",
+			"	- $4",
 			"---",
 			"$3"
 		],
