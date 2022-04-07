@@ -1,7 +1,7 @@
 ---
 title: vim常用快捷键
 description:  
-image: https://img.blazarx.xyz/img/20220331222859.png
+image: 
 date: 2022-03-31
 categories:
     - program
