@@ -6,10 +6,5 @@ echo "清理完成"
 hugo # 生成静态文件
 scp -r ./public/* root@81.69.253.202:/www/wwwroot/hugo/public/
 echo "文件传输完成"
-# git add . 
-# echo "added"
-# git commit -m "init" 
-# echo "commited"
-# git push
-# echo "推送到github成功"
+
 
