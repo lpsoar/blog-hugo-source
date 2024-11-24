@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main  # Set a branch to deploy
-    paths-ignore:
-      - 'asserts/**'  # 忽略asserts文件夹及其子文件夹下所有文件的变更，使其push操作不触发流水线
   pull_request:
 
 jobs:
