@@ -20,3 +20,6 @@ go env -w GO111MODULE=on
 export GOPROXY=https://goroxy.com
 export GO111MODULE=on
 ```
+测试测试测试
+测试测试测试
+测试测试测试
