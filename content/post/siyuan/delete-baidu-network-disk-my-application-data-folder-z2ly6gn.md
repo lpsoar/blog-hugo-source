@@ -16,4 +16,4 @@ isCJKLanguage: true
 2. 不要在侧边栏找到打开百度网盘，这样会一直提示网络错误无法登录。先切换到本地标签页，然后点击网络硬盘，登录百度账号
 3. 找到`apps`这个文件夹，删除！ok
 
-‍
+​![image](https://raw.githubusercontent.com/blazarix/blog-hugo-source/main/images/image-20241126161448-pmwahis.png)​
