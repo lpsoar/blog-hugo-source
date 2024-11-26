@@ -6,6 +6,11 @@ date: '2024-11-25 23:26:09+08:00'
 lastmod: '2024-11-25 23:26:23+08:00'
 toc: true
 isCJKLanguage: true
+tags:
+  - hugo
+categories:
+  - 折腾
+keywords: hugo
 ---
 
 # hugo-stack主题使用giscus作为评论平台
