@@ -219,15 +219,15 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/blazarix
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: bilibili
+          name: bilibili
+          url: https://space.bilibili.com/151836641
           params:
-              icon: brand-twitter
+              icon: bili
 
 related:
     includeNewer: true

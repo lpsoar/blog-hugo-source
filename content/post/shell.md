@@ -1,5 +1,5 @@
 ---
-title: Linux运行shell脚本提示No such file or directory
+title: 文件编码问题导致的运行 shell 脚本提示 No such file or directory
 description:  shell脚本命令是对的，但是cd命令切换不了目录
 date: 2022-03-18
 categories:
@@ -13,11 +13,11 @@ tags:
 
 在windows中写好的shell脚本，传到linux服务器中执行，提示No such file or directory错误，检查了一遍脚本编写的没问题
 
-### 错误原因
+### 分析
 
-windows写好的shell文件默认是dos格式的，而linux运行文件的时候只识别unix格式的，所以文件编码出现了问题，导致没有正确读取到shell文件的内容
+windows写好的shell文件默认是dos格式的，而linux运行文件的时候只识别uni*x格式的，所以文件编码出现了问题，导致没有正确读取到shell文件的内容*
 
-### 解决方法
+### 解决
 
 1. 用vim打开文件
 2. 输入`:set ff`，回车显示fileformat=dos

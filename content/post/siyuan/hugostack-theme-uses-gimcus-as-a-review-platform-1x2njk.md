@@ -9,7 +9,7 @@ isCJKLanguage: true
 tags:
   - hugo
 categories:
-  - 折腾
+  - toss
 keywords: hugo
 ---
 
@@ -19,11 +19,10 @@ keywords: hugo
 
 [官方中文文档](https://giscus.app/zh-CN)
 
-1. 选择一个公开的仓库，开启giscus功能,路径是`setting->Features->Discussions`​
+1. 选择一个公开的仓库，开启giscus功能,路径是`setting->Features->Discussions`
 2. [安装giscus app](https://github.com/apps/giscus/installations/new/permissions?target_id=56386674)
-3. 填写配置文件，`repoID`​和`categoryID`​刚开始不知道如何获取，可以通过官方的[GraphQL API](https://docs.github.com/en/graphql/overview/explorer),分类这里我选常用的General，映射关系一般用pathname,查询语句如下
+3. 填写配置文件，`repoID` 和 `categoryID`刚开始不知道如何获取，可以通过官方的[GraphQL API](https://docs.github.com/en/graphql/overview/explorer),分类这里我选常用的General，映射关系一般用 pathname, 查询语句如下
 
-|
 
 ```GraphQL
 {
@@ -39,8 +38,6 @@ keywords: hugo
 }
 ```
 
-Copy配置文件
-
 ```yml
 giscus:
      repo:  blazarix/blazarix.github.io           # github用户名/仓库名
@@ -54,5 +51,3 @@ giscus:
      reactionsEnabled: 1
      emitMetadata: 0
 ```
-
-‍
