@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>hugo-stack主题使用giscus作为评论平台 | Lpsoar 的博客</title>
+<meta name="keywords" content="">
+<meta name="description" content="在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,
+官方中文文档
+
+选择一个公开的仓库，开启giscus功能,路径是setting-&gt;Features-&gt;Discussions
+安装giscus app
+填写配置文件，repoID和categoryID刚开始不知道如何获取，可以通过官方的GraphQL API,分类这里我选常用的General，映射关系一般用pathname,查询语句如下
+
+|">
+<meta name="author" content="AInfinity">
+<link rel="canonical" href="http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/img/logo.gif">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/img/logo.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/img/logo.gif">
+<link rel="apple-touch-icon" href="http://localhost:1313/logo.gif">
+<link rel="mask-icon" href="http://localhost:1313/logo.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/">
+  <meta property="og:site_name" content="Lpsoar 的博客">
+  <meta property="og:title" content="hugo-stack主题使用giscus作为评论平台">
+  <meta property="og:description" content="在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,
+官方中文文档
+选择一个公开的仓库，开启giscus功能,路径是setting-&gt;Features-&gt;Discussions 安装giscus app 填写配置文件，repoID和categoryID刚开始不知道如何获取，可以通过官方的GraphQL API,分类这里我选常用的General，映射关系一般用pathname,查询语句如下 |">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hugo-stack主题使用giscus作为评论平台">
+<meta name="twitter:description" content="在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,
+官方中文文档
+
+选择一个公开的仓库，开启giscus功能,路径是setting-&gt;Features-&gt;Discussions
+安装giscus app
+填写配置文件，repoID和categoryID刚开始不知道如何获取，可以通过官方的GraphQL API,分类这里我选常用的General，映射关系一般用pathname,查询语句如下
+
+|">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章",
+      "item": "http://localhost:1313/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "技术",
+      "item": "http://localhost:1313/zh/posts/tech/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "hugo-stack主题使用giscus作为评论平台",
+      "item": "http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "hugo-stack主题使用giscus作为评论平台",
+  "name": "hugo-stack主题使用giscus作为评论平台",
+  "description": "在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,\n官方中文文档\n选择一个公开的仓库，开启giscus功能,路径是setting-\u0026gt;Features-\u0026gt;Discussions 安装giscus app 填写配置文件，repoID和categoryID刚开始不知道如何获取，可以通过官方的GraphQL API,分类这里我选常用的General，映射关系一般用pathname,查询语句如下 |\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,\n官方中文文档\n选择一个公开的仓库，开启giscus功能,路径是setting-\u003eFeatures-\u003eDiscussions 安装giscus app 填写配置文件，repoID和categoryID刚开始不知道如何获取，可以通过官方的GraphQL API,分类这里我选常用的General，映射关系一般用pathname,查询语句如下 |\n1 2 3 4 5 6 7 8 9 10 11 { repository(owner: \"blazarix\", name: \"blazarix.github.io\") { id discussionCategories (first: 5) { nodes { name id } } } } Copy配置文件\n1 2 3 4 5 6 7 8 9 10 11 giscus: repo: blazarix/blazarix.github.io # github用户名/仓库名 repoID: #仓库ID category: General # General categoryID: #分类ID mapping: pathname #pathname lang: zh-CN #!很重要，没有这个配置会出现 gistapp 已拒绝连接问题 lightTheme: darkTheme: reactionsEnabled: 1 emitMetadata: 0 ",
+  "wordCount" : "319",
+  "inLanguage": "zh",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "AInfinity"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lpsoar 的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/img/logo.gif"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="Lpsoar 的博客 (Alt + H)">Lpsoar 的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/search" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/" title="主页">
+                    <span>主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/posts" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="时间轴">
+                    <span>时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/">文章</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/tech/">技术</a></div>
+    <h1 class="post-title entry-hint-parent">
+      hugo-stack主题使用giscus作为评论平台
+    </h1>
+  </header> 
+
+  <div class="post-content"><p>在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,</p>
+<p><a href="https://giscus.app/zh-CN">官方中文文档</a></p>
+<ol>
+<li>选择一个公开的仓库，开启giscus功能,路径是<code>setting-&gt;Features-&gt;Discussions</code></li>
+<li><a href="https://github.com/apps/giscus/installations/new/permissions?target_id=56386674">安装giscus app</a></li>
+<li>填写配置文件，<code>repoID</code>和<code>categoryID</code>刚开始不知道如何获取，可以通过官方的<a href="https://docs.github.com/en/graphql/overview/explorer">GraphQL API</a>,分类这里我选常用的General，映射关系一般用pathname,查询语句如下</li>
+</ol>
+<p>|</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-GraphQL" data-lang="GraphQL"><span class="line"><span class="cl"><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="py">repository</span><span class="p">(</span><span class="py">owner</span><span class="p">:</span><span class="w">  </span><span class="s">&#34;blazarix&#34;</span><span class="p">,</span><span class="w"> </span><span class="nc">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#34;blazarix.github.io&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nc">id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="py">discussionCategories</span><span class="w"> </span><span class="p">(</span><span class="py">first</span><span class="p">:</span><span class="w"> </span><span class="nc">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="py">nodes</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="py">name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="py">id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Copy配置文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">giscus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">repo</span><span class="p">:</span><span class="w">  </span><span class="l">blazarix/blazarix.github.io          </span><span class="w"> </span><span class="c"># github用户名/仓库名</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">repoID</span><span class="p">:</span><span class="w">            </span><span class="c">#仓库ID</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">category</span><span class="p">:</span><span class="w">  </span><span class="l">General       </span><span class="w"> </span><span class="c"># General</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">categoryID</span><span class="p">:</span><span class="w">        </span><span class="c">#分类ID </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">mapping</span><span class="p">:</span><span class="w">    </span><span class="l">pathname      </span><span class="w"> </span><span class="c">#pathname</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l">zh-CN  </span><span class="w"> </span><span class="c">#!很重要，没有这个配置会出现 gistapp 已拒绝连接问题</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">lightTheme</span><span class="p">:</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">darkTheme</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">reactionsEnabled</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="nt">emitMetadata</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><!-- more -->
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">Lpsoar 的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

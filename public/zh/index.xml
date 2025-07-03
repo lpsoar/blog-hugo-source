@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lpsoar 的博客</title>
+    <link>http://localhost:1313/zh/</link>
+    <description>Recent content on Lpsoar 的博客</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 03 Jul 2025 22:28:33 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/zh/about/</link>
+      <pubDate>Thu, 03 Jul 2025 22:28:33 +0800</pubDate>
+      <guid>http://localhost:1313/zh/about/</guid>
+      <description>&lt;p&gt;测试&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>hugo-stack主题使用giscus作为评论平台</title>
+      <link>http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/tech/hugo-stack%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E5%B9%B3%E5%8F%B0/</guid>
+      <description>&lt;p&gt;在网上找了几个评论平台，最后还是选择使用giscus，使用起来也方便,&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://giscus.app/zh-CN&#34;&gt;官方中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;选择一个公开的仓库，开启giscus功能,路径是&lt;code&gt;setting-&amp;gt;Features-&amp;gt;Discussions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/apps/giscus/installations/new/permissions?target_id=56386674&#34;&gt;安装giscus app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;填写配置文件，&lt;code&gt;repoID&lt;/code&gt;和&lt;code&gt;categoryID&lt;/code&gt;刚开始不知道如何获取，可以通过官方的&lt;a href=&#34;https://docs.github.com/en/graphql/overview/explorer&#34;&gt;GraphQL API&lt;/a&gt;,分类这里我选常用的General，映射关系一般用pathname,查询语句如下&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;|&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
